@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEDFCC"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/welcome" />
+
+        <EditText
+            android:id="@+id/name_text_view"
+            style="@style/EditText"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/begin" />
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/milky_way" />
+
+        <RadioGroup
+            android:id="@+id/milky_way_quiz"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/yes_answer"
+                style="@style/RadioButton"
+                android:text="@string/RB1" />
+
+            <RadioButton
+                android:id="@+id/no_answer"
+                style="@style/RadioButton"
+                android:text="@string/RB2" />
+        </RadioGroup>
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/closest_planet" />
+
+        <RadioGroup
+            android:id="@+id/closest_planet_quiz"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/yes_quiz"
+                style="@style/RadioButton"
+                android:text="@string/RB1" />
+
+            <RadioButton
+                android:id="@+id/no_quiz"
+                style="@style/RadioButton"
+                android:text="@string/RB2" />
+        </RadioGroup>
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/sun_revolves" />
+
+        <RadioGroup
+            android:id="@+id/sun_revolves_quiz"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/earth_center"
+                style="@style/RadioButton"
+                android:text="@string/RB1" />
+
+            <RadioButton
+                android:id="@+id/of_course_not"
+                style="@style/RadioButton"
+                android:text="@string/RB3" />
+        </RadioGroup>
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/dry_weather" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/jupiter"
+            android:contentDescription="@string/Image"/>
+
+        <RadioGroup
+            android:id="@+id/earth_image_quiz"
+            style="@style/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/image_yes"
+                style="@style/RadioButton"
+                android:text="@string/RB1" />
+
+            <RadioButton
+                android:id="@+id/image_no"
+                style="@style/RadioButton"
+                android:text="@string/RB2" />
+        </RadioGroup>
+
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/farthest_planets" />
+
+        <CheckBox
+            android:id="@+id/mercury_box"
+            style="@style/CheckBox"
+            android:text="@string/CB1" />
+
+        <CheckBox
+            android:id="@+id/venus_box"
+            style="@style/CheckBox"
+            android:text="@string/CB2" />
+
+        <CheckBox
+            android:id="@+id/apes_box"
+            style="@style/CheckBox"
+            android:text="@string/CB3" />
+
+        <CheckBox
+            android:id="@+id/saturn_box"
+            style="@style/CheckBox"
+            android:text="@string/CB4" />
+
+        <CheckBox
+            android:id="@+id/neptune_box"
+            style="@style/CheckBox"
+            android:text="@string/CB5" />
+
+        <CheckBox
+            android:id="@+id/jupiter_box"
+            style="@style/CheckBox"
+            android:text="@string/CB6" />
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/smallest_p" />
+
+        <EditText
+            android:id="@+id/smallest_planet"
+            style="@style/EditText"
+            android:hint="@string/P"
+            android:inputType="text" />
+
+        <View style="@style/ViewStyle" />
+
+        <Button
+            style="@style/Button"
+            android:onClick="submitQuiz"
+            android:text="@string/BT1" />
+
+        <View style="@style/ViewStyle" />
+
+        <TextView
+            style="@style/QuizTextView"
+            android:text="@string/thanks" />
+
+        <Button
+            style="@style/Button"
+            android:onClick="resetQuiz"
+            android:text="@string/BT2" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">KosmoQuiz</string>
+    <string name="name">Name</string>
+    <string name="welcome">Welcome To Our Cosmo Quiz App</string>
+    <string name="begin">Let The Games Begin!</string>
+    <string name="milky_way">1)We live in the milky way?</string>
+    <string name="closest_planet">2)Earth is the closest planet to the sun?</string>
+    <string name="sun_revolves">3)The sun revolves around the earth</string>
+    <string name="dry_weather">4)The image below is that of the earth during dry weather</string>
+    <string name="farthest_planets">5)Which of the following planets is farthest from the sun?</string>
+    <string name="CB1">Mercury</string>
+    <string name="CB2">Venus</string>
+    <string name="CB3">Planet of the apes</string>
+    <string name="CB4">Saturn</string>
+    <string name="CB5">Neptune</string>
+    <string name="CB6">Jupiter</string>
+    <string name="RB1">Yes</string>
+    <string name="RB2">No</string>
+    <string name="RB3">Of course not!</string>
+    <string name="Image">earth image</string>
+    <string name="BT1">Submit</string>
+    <string name="BT2">Reset</string>
+    <string name="smallest_p">Which planet is the smallest</string>
+    <string name="P">Planet</string>
+    <string name="thanks">Thanks for stopping by</string>
+
+
+
+
+
+</resources>
