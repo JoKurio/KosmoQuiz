@@ -6,13 +6,9 @@ import android.widget.RadioButton;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    RadioGroup milky_way_quiz;
-    RadioGroup closest_planet_quiz;
-    RadioGroup sun_revolves_quiz;
     RadioButton yes_answer;
     RadioButton no_answer;
     RadioButton yes_quiz;
@@ -28,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
     CheckBox neptune_box;
     CheckBox jupiter_box;
     EditText smallest_planet;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,15 +101,15 @@ public class MainActivity extends AppCompatActivity {
         saturnBox = saturn_box.isChecked();
         neptuneBox = neptune_box.isChecked();
         jupiterBox = jupiter_box.isChecked();
-        if (neptuneBox) {
+        if (neptuneBox && mercuryBox && venusBox && saturnBox && jupiterBox) {
             quizFive = 5;
-        } else if (mercuryBox || venusBox || apesBox || saturnBox || jupiterBox) {
+        } else if (apesBox) {
             quizFive = 0;
         }
         String smallestPlanet;
         smallest_planet = findViewById(R.id.smallest_planet);
         smallestPlanet = smallest_planet.getText().toString();
-        if (smallestPlanet.equals("Mercury")) {
+        if (smallestPlanet.equalsIgnoreCase("Mercury")) {
             quizSix = 5;
         } else {
             quizSix = 0;
@@ -129,16 +123,17 @@ public class MainActivity extends AppCompatActivity {
         } else if (finalScore == 20) {
             Toast.makeText(this, "Good!You got 4 questions right, " + finalScore + " points for you.", Toast.LENGTH_LONG).show();
         } else if (finalScore == 15) {
-            Toast.makeText(this,"Okay, you got 3 questions right, "+finalScore+" points for you", Toast.LENGTH_LONG).show();
-        }else if(finalScore == 10){
-            Toast.makeText(this,"Just "+finalScore+" points out of 30. You can do better.", Toast.LENGTH_LONG).show();
-        }else if(finalScore == 5){
-            Toast.makeText(this,+finalScore+" points out of 30. Not too good.", Toast.LENGTH_LONG).show();
-        }else if(finalScore == 0) {
+            Toast.makeText(this, "Okay, you got 3 questions right, " + finalScore + " points for you", Toast.LENGTH_LONG).show();
+        } else if (finalScore == 10) {
+            Toast.makeText(this, "Just " + finalScore + " points out of 30. You can do better.", Toast.LENGTH_LONG).show();
+        } else if (finalScore == 5) {
+            Toast.makeText(this, +finalScore + " points out of 30. Not too good.", Toast.LENGTH_LONG).show();
+        } else if (finalScore == 0) {
             Toast.makeText(this, +finalScore + " points out of 30. Bad day, or geography is just not your thing?", Toast.LENGTH_LONG).show();
         }
     }
-    public void resetQuiz(View v){
+
+    public void resetQuiz(View v) {
         EditText smallestPlanet = findViewById(R.id.smallest_planet);
         smallestPlanet.setText("");
         yes_answer.setChecked(false);

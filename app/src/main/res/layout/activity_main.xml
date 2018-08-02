@@ -99,8 +99,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/jupiter"
-            android:contentDescription="@string/Image"/>
+            android:contentDescription="@string/Image"
+            android:src="@drawable/jupiter" />
 
         <RadioGroup
             android:id="@+id/earth_image_quiz"
@@ -117,12 +117,11 @@
                 android:text="@string/RB2" />
         </RadioGroup>
 
-
         <View style="@style/ViewStyle" />
 
         <TextView
             style="@style/QuizTextView"
-            android:text="@string/farthest_planets" />
+            android:text="@string/milky_way_planets" />
 
         <CheckBox
             android:id="@+id/mercury_box"
