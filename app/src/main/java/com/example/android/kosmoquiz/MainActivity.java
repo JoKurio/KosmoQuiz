@@ -25,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
     CheckBox jupiter_box;
     EditText smallest_planet;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
+
 
     public void submitQuiz(View view) {
         int finalScore;
@@ -103,7 +106,8 @@ public class MainActivity extends AppCompatActivity {
         jupiterBox = jupiter_box.isChecked();
         if (neptuneBox && mercuryBox && venusBox && saturnBox && jupiterBox) {
             quizFive = 5;
-        } else if (apesBox) {
+        }
+        if (apesBox) {
             quizFive = 0;
         }
         String smallestPlanet;

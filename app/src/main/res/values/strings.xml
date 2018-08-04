@@ -7,7 +7,7 @@
     <string name="closest_planet">2)Earth is the closest planet to the sun?</string>
     <string name="sun_revolves">3)The sun revolves around the earth</string>
     <string name="dry_weather">4)The image below is that of the earth during dry weather</string>
-    <string name="milky_way_planets">5)Which of the following planets are in the milky way?\n(Careful! You miss one, you miss them all!)</string>
+    <string name="milky_way_planets">5)Which of the following planets are in the milky way?\n(Careful,tick the wrong one and you lose points!)</string>
     <string name="CB1">Mercury</string>
     <string name="CB2">Venus</string>
     <string name="CB3">Planet of the apes</string>
